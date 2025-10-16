@@ -1,0 +1,10 @@
+DOCKER FULL COMMANDS FOR LEARNING 
+
+1) Docker installation for Ubuntu
+Step 1:- first check the Docker is available are not in the Ubuntu terminal [ sudo docker --version ]
+Step 2:- Update the Linux kernel [ sudo apt update-y ]  
+Step 3:- remove the once you can have the old Docker means[ sudo apt remove docker docker-engine docker.io containerd runc ]
+Step 4:-
+Step 5:-
+Step 6:-
+Step 7:-
