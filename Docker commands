@@ -12,14 +12,30 @@ Step 7:-
 
 COMMANDS:-
 [ docker ps ] :- it can show the how many containers are running into the Docker.
+[ docker ps -a ]:- it  can be show the running and stoping containers.
 [ docker run imagename ] :- it can be create the docker container.
 [ docker run -d imagename ] :- it can also create the docker container but detech mode.
-
-
-
-
-
-
+[ docker build -t imagename ]:- it can be create the your docker file as image.
+[ docker run -d -p 5000:5000 --name containername imagename ]:- it can be create the image and container in detech mode and run with spefic port.
+[ docker images ]:- it can be show the how many images are avaliable inside the Docker.
+[ docker run -p 5000:5000 imagename ]:- it can be run on the what the image we can create that into the particular port number inside the google.
+[ docker rmi -f imagename ]:- it can be remove the image in fourcefully.
+[ docker rm containername,id ]:- it can be remove the container inside the Docker.
+[ docker start containername,id]:- it can be start the container.
+[ docker stop containername,id]:- it can be stop the container.
+[ docker logs containername,id ]:-it can be debug the errors we can happend.
+[ docker port containername,id ]:- it can be show the container which port number it can be running.
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
+[]:-
 
 
 [ sudo usermod -aG docker $USER ] :- it can add the user for Docker group.
