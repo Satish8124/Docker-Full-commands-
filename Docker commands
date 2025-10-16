@@ -4,8 +4,25 @@ DOCKER FULL COMMANDS FOR LEARNING
 Step 1:- first check the Docker is available are not in the Ubuntu terminal [ sudo docker --version ]
 Step 2:- Update the Linux kernel [ sudo apt update-y ]  
 Step 3:- remove the once you can have the old Docker means[ sudo apt remove docker docker-engine docker.io containerd runc ]
-Step 4:- install the certificate of Docker and dependences [ sudo apt install ca-certificates curl gnupg lsb-release -y ] 
-Step 5:- Add official GPG key for Docker [ sudo mkdir -p /etc/apt/keyrings
-                                          curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg ]
+Step 4:-
+Step 5:-
 Step 6:-
 Step 7:-
+
+
+COMMANDS:-
+[ docker ps ] :- it can show the how many containers are running into the Docker.
+[ docker run imagename ] :- it can be create the docker container.
+[ docker run -d imagename ] :- it can also create the docker container but detech mode.
+
+
+
+
+
+
+
+
+[ sudo usermod -aG docker $USER ] :- it can add the user for Docker group.
+[ newgrp docker ] :- it can be activate the docker group .
+
+
