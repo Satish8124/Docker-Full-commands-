@@ -1,0 +1,37 @@
+🧩 Step 1: Update system packages
+sudo apt update && sudo apt upgrade -y
+
+🧩 Step 2: Install required dependencies
+sudo apt install wget gpg apt-transport-https software-properties-common -y
+
+🧩 Step 3: Import the Microsoft GPG key
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
+
+🧩 Step 4: Add the VS Code repository
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+
+🧩 Step 5: Update package list again
+sudo apt update
+
+🧩 Step 6: Install Visual Studio Code
+sudo apt install code -y
+
+🧩 Step 7: Launch VS Code
+
+You can now open it by typing:
+
+code
+
+
+or, if you want to open your current project folder:
+
+code .
+
+
+💡 Tip: If you’re using Ubuntu via WSL (Windows Subsystem for Linux), make sure you have VS Code installed on Windows too — then just run:
+
+code .
+
+
+and it will automatically open your Ubuntu project inside Windows VS Code.
