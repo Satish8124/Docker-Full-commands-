@@ -39,3 +39,22 @@ minikube   Ready    master   2m    v1.31.0
 7. Access Minikube Dashboard
  [ minikube dashboard ]
 Opens a browser-based Kubernetes Dashboard for visual management.
+
+
+
+##### COMMANDS ######
+1)
+2)
+3)
+4)
+5)
+6)
+7)
+8)
+9)
+10)
+11)
+12)
+13)
+14)
+15)
