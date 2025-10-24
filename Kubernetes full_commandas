@@ -1,0 +1,41 @@
+🚀 Install Minikube on Ubuntu (Recommended Setup)
+1. Update your system
+sudo apt update -y
+sudo apt upgrade -y
+
+2. Install dependencies
+[ sudo apt install -y curl wget apt-transport-https virtualbox virtualbox-ext-pack ]
+
+3. Install kubectl (Kubernetes CLI)
+[ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+kubectl version --client ]
+
+4. Install Minikube
+[ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+sudo dpkg -i minikube_latest_amd64.deb
+minikube version ]
+
+5. Start Minikube cluster
+You can start Minikube with VirtualBox or Docker as your driver.
+Option 1 – Using VirtualBox
+[ minikube start --driver=virtualbox ]
+
+Option 2 – Using Docker
+(If you already have Docker installed)
+
+[ minikube start --driver=docker ]
+This will automatically create a single-node Kubernetes cluster inside a small VM managed by Minikube.
+
+6. Verify Installation
+[ kubectl get nodes ]
+
+✅ You should see:
+
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   2m    v1.31.0
+
+7. Access Minikube Dashboard
+ [ minikube dashboard ]
+Opens a browser-based Kubernetes Dashboard for visual management.
