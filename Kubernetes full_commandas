@@ -49,13 +49,13 @@ Opens a browser-based Kubernetes Dashboard for visual management.
 4) [ kubectl create deployment NAME --image=imagename ] -> it can be create the deployment docker image inside the kubernetes cluster 
 and create the pods and run the image. in  imagename must be the inside DOCKERHUB. first create the image and push into the docker hub and pull into the kubernetes cluster. 
 5) [ kubectl expose deployment deploymentname --type=NodePort --port=80 ] -> it can be run the image into the browser in that we canm use the expose command.
-6) [ kubectl service deploymentname ] -> when this command can run this can be open the running pods into the browser.
-7) [ kubectl service deploymentname --url ] -> it can be print the url of running pord
-8)
-9)
-10)
-11)
-12)
-13)
-14)
-15)
+6) [ minikube service deploymentname ] -> when this command can run this can be open the running pods into the browser.
+7) [ minikube service deploymentname --url ] -> it can be print the url of running pord
+8) [minikube ip]-> it can show the ip address of the minikube.
+9)[kubectl get svc]-> it can show the detail of the pod. means ip address and clusterip ports all itcan be show.
+10)[kubectl get all] -> it can be show the how many running pods are avaliable it show.
+11)[ kubectl delete deploymet deploymentname] -> it can be delete the deployment.
+12)[kubectl delete service servicename] -> it delete the service of that pod.
+13 []
+14)[]
+15)[]
